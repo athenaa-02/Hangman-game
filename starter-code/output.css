@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -176,14 +175,8 @@
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
-  .left-11 {
-    left: calc(var(--spacing) * 11);
-  }
   .left-\[11px\] {
     left: 11px;
-  }
-  .m-auto {
-    margin: auto;
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -197,14 +190,11 @@
   .table {
     display: table;
   }
-  .h-13 {
-    height: calc(var(--spacing) * 13);
+  .h-2 {
+    height: calc(var(--spacing) * 2);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-31 {
-    height: calc(var(--spacing) * 31);
   }
   .h-\[13px\] {
     height: 13px;
@@ -212,20 +202,20 @@
   .h-\[31px\] {
     height: 31px;
   }
+  .h-\[272px\] {
+    height: 272px;
+  }
   .h-\[500px\] {
     height: 500px;
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-119 {
-    width: calc(var(--spacing) * 119);
-  }
-  .w-\[119\] {
-    width: 119;
   }
   .w-\[119px\] {
     width: 119px;
@@ -260,9 +250,6 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
-  .items-baseline {
-    align-items: baseline;
-  }
   .items-center {
     align-items: center;
   }
@@ -275,23 +262,20 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-7 {
-    gap: calc(var(--spacing) * 7);
-  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
+  .gap-24 {
+    gap: calc(var(--spacing) * 24);
+  }
   .gap-32 {
     gap: calc(var(--spacing) * 32);
   }
   .gap-\[400px\] {
     gap: 400px;
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-\[96px\] {
     border-radius: 96px;
@@ -306,15 +290,8 @@
   .bg-\[white\] {
     background-color: white;
   }
-  .bg-white {
-    background-color: var(--color-white);
-  }
   .text-\[40px\] {
     font-size: 40px;
-  }
-  .font-\[40px\] {
-    --tw-font-weight: 40px;
-    font-weight: 40px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -416,6 +393,18 @@ div.menu_btn {
   background-image: url(./assets/images/burger_menu.png);
   width: 94px;
   height: 94px;
+}
+div.letter {
+  width: 112px;
+  height: 128px;
+  color: white;
+  background-color: #2463FF;
+  font-size: 60px;
+  font-weight: 600;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @property --tw-rotate-x {
   syntax: "*";

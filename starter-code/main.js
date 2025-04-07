@@ -36,6 +36,7 @@ function lowerCaseCat(chosenCategory){
 
 
 
+
 const getWord = async(chosenCategory) => {
    try{
     const response = await fetch('data.json')
@@ -44,13 +45,17 @@ const getWord = async(chosenCategory) => {
     // console.log(data.categories.Movies)
     let choise = lowerCaseCat(chosenCategory) 
     let category = data.categories
-
+    let lettersParent = document.querySelector('#letters_place')
 
     Object.entries(category).forEach(([categoryName, arr]) =>{
         if(categoryName === choise){
-            arr.forEach(words =>{
-                let word = words.name
-                console.log(typeof(words))
+            let number = Math.ceil(Math.random() * arr.length)
+
+            const randomWord = arr[number].name
+            
+            const letters = randomWord.replace(' ', '').split('')
+            letters.forEach(letter =>{
+               lettersParent.innerHTML += `<div class="letter">${letter}</div>`
             })
         }
     })
