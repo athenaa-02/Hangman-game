@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+  <title>Hangman game</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+ 
+<main class="w-screen h-screen flex flex-col">
+   <section data-name="rules_heading" class="flex items-center gap-[400px]">
+     <div class="back_btn cursor-pointer"></div>
+     <img src="./assets/images/How to Play.png" alt="">
+   </section>
+
+   <!-- section with three rules -->
+   <section class="rules flex gap-8 justify-center">
+
+      <aside class="rule">
+        <h3>01</h3>
+        <p>Choose a category</p>
+        <article>
+            First, choose a word category, like animals or movies.
+             The computer then randomly selects a secret word from 
+            that topic and shows you blanks for each letter of the word.
+        </article>
+      </aside>
+
+            <aside class="rule">
+        <h3>02</h3>
+        <p>Guess letters</p>
+        <article>
+            Take turns guessing letters. The computer fills 
+            in the relevant blank spaces if your guess is correct. 
+            If it’s wrong, you lose some health, 
+            which empties after eight incorrect guesses.
+        </article>
+      </aside>
+
+            <aside class="rule">
+        <h3>03</h3>
+        <p>Win or lose</p>
+        <article>
+            You win by guessing all the letters in the
+             word before your health runs
+             out. If the health bar empties before you guess 
+             the word, you lose.
+        </article>
+      </aside>
+   </section>
+</main>
+
+</body>
+</html>

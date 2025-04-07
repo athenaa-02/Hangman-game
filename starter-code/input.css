@@ -1,1 +1,91 @@
+@import url(./assets/fonts/MouseMemoirs-Regular.ttf);
 @import "tailwindcss";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    background-image: url(./assets/images/background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: "Mouse Memoirs", sans-serif;
+}
+[data-name="play_heading"]{
+    background: linear-gradient(#344ABA, rgba(0, 20, 121, 0.83));
+    border-radius: 72px;
+}
+button#rules{
+    background-color: #2463FF;
+    font-family: "Mouse Memoirs", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 5%;
+    margin-top: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+div.back_btn{
+    background-image: url(./assets/images/Group\ 56.png);
+    width: 94px;
+    height: 94px;
+}
+
+aside.rule{
+    background-color: white;
+    border-radius: 40px;
+    width: 384px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 48px 0 48px;
+}
+
+aside.rule h3{
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120%;
+    color: #2463FF;
+}
+aside.rule p{
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
+aside.rule article{
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
+
+aside.category{
+    width: 384px;
+    height: 190px;
+    border-radius: 40px;
+    background-color: #2463FF;
+    color: white;
+    font-size: 30px;
+    font-family:  "Mouse Memoirs", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+div.menu_btn{
+    background-image: url(./assets/images/burger_menu.png);
+    width: 94px;
+    height: 94px;
+}

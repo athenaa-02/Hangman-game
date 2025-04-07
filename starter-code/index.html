@@ -6,13 +6,24 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
   <title>Hangman game</title>
   <script src="main.js" defer></script>
 </head>
 <body>
  
-<main class="w-screen h-screen" >
+<main class="w-screen h-screen flex justify-center items-center">
+   <section data-name="play_heading" class="w-[592px] h-[500px] relative flex justify-center items-center flex-col">
+    <img src="./assets/images/logo.svg" class="absolute -top-26" alt="">
 
+    <div id="play_btn" class="relative flex items-center justify-center mt-10 cursor-pointer">
+      <img src="./assets/images/Rectangle 8.png" alt="">
+      <img src="./assets/images/icon-play.svg" alt="" class="absolute">
+    </div>
+
+    <button id="rules" class="w-64 h-16">HOW TO PLAY</button>
+
+   </section>
 </main>
 
 </body>
