@@ -35,8 +35,6 @@ function lowerCaseCat(chosenCategory){
 }
 
 
-
-
 const getWord = async(chosenCategory) => {
    try{
     const response = await fetch('data.json')
